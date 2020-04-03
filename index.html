@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -128,57 +128,67 @@
                 <span class="circle circle-bottom"></span>
             </div>
         </div>
-    </div>
+    </div> 
 
-    <div id="fp-container">
-
+<div class="fp-container">
     <!--NAVBAR-->
 
 
     <section class="nav-section">
     <nav class="main-navbar">
         <div  class="logo">
-            <img src="logo.jpg" alt="Akash'slogo" width="107px" height="60px" style="margin-left:20px;">    </div>
+            <a href="#Home"><img src="logo.jpg" alt="Akash'slogo" width="107px" height="60px" style="margin-left:20px;"></a></div>
+            
         <ul class="nav-ul" style="font-weight:560;">
             <li>
-                <a href="#">Home</a>
+                <a href="#Home">Home</a>
             </li>
             <li>
                 <a href="#About">About</a>
             </li>
             <li>
-                <a href="#Contact" style="margin-right:120px;">Contact</a>
+                <a href="#Contact" class="contact-nav">Contact</a>
             </li>
         </ul>
     </nav>
 </section>
-    <section class="cover">
+
+<div class="social-icons">
+    <a href="#Home" class="social-icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href="https://github.com/gssakash"  target=_blank class="social-icon"><i class="fa fa-github" aria-hidden="true"></i></a>
+    <a href="#Home" class="social-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+</div>
+
+
+    <section class="cover" id="Home">
         <div class="row">
-            <div class="col-md-6 col-sm-3">
+            <div class="col-md-6 col-sm-6">
             <div class="cover-text">
             <h2>Welcome To my Site !</h2>
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod.</p>
             </div>
         </div>
-        <div class="col-md-6 col-sm-3">
+        <div class="col-md-6 col-sm-6">
 
     <img src="cover-image-black.png" alt="cover-1" class="cover-image img-fluid" width="600px" height="250px">
 </div>
-</div>
-<button class="btn workbtn" style="outline: none;" onclick="scrollTo(About)">
-    
-    <a href="#About"> VIEW MY WORK     <i class="fa fa-arrow-right" aria-hidden="true"></i>
+<div class="col-md-6 col-sm-6">
+<button class="btn workbtn" style="outline: none;">
+    <a href="#Contact"> CONTACT ME <i class="fa fa-arrow-right" aria-hidden="true"></i>
     </a>
 </button>
+</div>
+</div>
+
 </section>
 <section class="about-us" id="About">
     <br><br>
     <hr>
     <div class="row">
-    <div class="col-md-6 col-sm-3">
+    <div class="col-md-6 col-sm-6">
         <img src="undraw-thinking.png" alt="cover-2" class="cover-image-2 img-fluid" width="400px" height="225px" style="margin-bottom:150px; margin-top:245px;">
     </div>
-    <div class="col-md-6 col-sm-3 animate-about">
+    <div class="col-md-6 col-sm-6 animate-about">
     <h2>About Myself</h2>
     <p>
         Lorem ipsum dolor. Sapiente tenetur corporis doloremque quasirim Lorem ipsum dolor. min magnam eiuscr repudiandae harumalat lorem temporibus loremer accusantium nulla! Autem  quibusdamare esse suscipit ea consequatur ut  fugitcrea nam expedita accusamus asperna por maxime iusto necessitatisunbus Loreme lipsum.
@@ -199,7 +209,7 @@
             <textarea placeholder="Your Message"></textarea>
             <div class="submitbtn" style="margin-left:165px;"><span class="message">SUBMIT</span></div>
         </div>
-    </div>
+</div>
 </section>
 </div>
 <!-- 

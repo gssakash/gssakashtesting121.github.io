@@ -8,6 +8,12 @@
 //     hidePreloader();
 //     });
 
+// const scrollTo = id =>{
+//     const element = document.getElementById('About');
+//     element.scrollIntoView();
+// }
+
+
 const loader = document.querySelector('.preloader-container');
 const main = document.querySelector('.fp-container');
 
@@ -18,57 +24,51 @@ function init() {
 
     main.style.display = 'block';
     setTimeout(() => (main.style.opacity = 1), 50);
-  }, 3000);
+  }, 4080);
 }
 
 init();
 
 
-
-const scrollTo = id =>{
-    const element = document.getElementById('About');
-    element.scrollIntoView();
-}
-
 window.sr = ScrollReveal();
 
-ScrollReveal().reveal({delay:1000});
+ sr.reveal('.main-navbar', {
+     duration:6000,
+     origin:'bottom'
+ });
 
-//ScrollReveal().reveal('.fp-container', { delay: 2000 });
+sr.reveal('.social-icons', {
+        duration:2500,
+        origin:'left'
+    });
 
-sr.reveal('.main-navbar', {
-    duration:5000,
-    origin:'bottom'
-});
-
-window.sr = ScrollReveal();
 
 sr.reveal('.cover-image', {
-    duration:7000,
+    duration:10000,
     origin:'top',
     distance:'300px'
 });
 
 sr.reveal('.cover-text', {
-    duration:7000,
+    duration:10000,
     origin:'left',
     distance:'300px'
 });
 
 sr.reveal('.workbtn a', {
-    duration:7000,
+    duration:9000,
     origin:'left',
     distance:'300px'
 });
 
 sr.reveal('.animate-about', {
-    duration:1500,
+    duration:5000,
     origin:'right',
     distance:'300px'
 });
 
 sr.reveal('.cover-image-2', {
-    duration:2500,
+    duration:3000,
     origin:'top',
     distance:'300px'
 });

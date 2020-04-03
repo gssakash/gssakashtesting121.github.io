@@ -1,6 +1,8 @@
+html{
+    scroll-behavior:smooth;
+}
 
-
-.preloader-container{
+ .preloader-container{
     position:fixed;
     background-color: #121212;
     z-index: 99999999;
@@ -497,7 +499,7 @@
     85%{bottom: 0px;}
     100%{bottom: 0px;}
 }
- 
+  
 
 
 
@@ -523,10 +525,28 @@ html.sr .load-hidden {
     visibility: hidden;
 }
 
+
+.logo a{
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.close-btn{
+    margin-right:40px;
+}
+
 .main-navbar .logo{
     padding-left:75px;
 }
 .main-navbar{
+    contain: layout;
+    pointer-events: all;
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -534,8 +554,8 @@ html.sr .load-hidden {
     font-size:14.5px;
     background-color:#121212;
     width:100%;
-    position:initial;
     font-family: 'Open Sans', sans-serif;
+    z-index:999;
 }
 
 
@@ -553,6 +573,10 @@ html.sr .load-hidden {
     margin-top:32px;
 }
 
+.contact-nav{
+    margin-right:120px;
+}
+
 
 .nav-ul li a{
     color:whitesmoke;
@@ -563,11 +587,37 @@ html.sr .load-hidden {
     padding-bottom:10px;
 }
 
-a:hover{
+.nav-ul li a:hover{
     transition-delay:all 1s ease-in-out;
     margin-top:5px;
     border-bottom:2px solid #EF0D33;
 }
+
+.social-icons
+{
+    position: fixed;
+    top: 56.33%;
+    transform: translateY(-50%);
+    z-index: 1;
+    opacity:0.95;
+}
+
+.social-icons a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 24px;
+}
+ .social-icon:hover{
+    color: #EF0D33;
+    text-decoration: none;
+}
+
+
+
+
 
 .cover{
     background-color: #121212;
@@ -578,6 +628,7 @@ a:hover{
     display:flex;
     position: relative;
     overflow-y:hidden;
+    overflow-x:hidden;
 }
 
 hr{
@@ -608,8 +659,8 @@ hr{
 
 .workbtn a{
     position:absolute;
-    top:72%;
-    left:100px;
+    top:-75px;
+    left:125px;
     padding:12.5px 20px;
     color:rgb(233, 29, 63);
     background-color:#121212;
@@ -685,7 +736,7 @@ hr{
     border-radius:5px;
     display:flex;
     flex-direction:column;
-    box-shadow:0 0 10px rgba(0, 0, 0, 0.788);
+    box-shadow:0 0 30px rgba(0, 0, 0, 0.788);
     font-size:15px;
     width:700px;
 }
@@ -759,4 +810,27 @@ hr{
     margin-top:3%;
     margin-left:33.33%;
 }
+
+
+@media(max-width:1024px)
+{
+    .main-navbar{
+        width:60%;
+    }
+    .logo{
+        margin-right:350px;
+    }
+}
+
+@media(max-width:576px)
+{
+    hr{
+        display:none;
+    }
+    br{
+        display:none;
+    }
+}
+
+
 
